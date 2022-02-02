@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap);
+
+/* Header */
+
+header {
+    padding: 2rem 0 4rem;
+    text-align: left;
+}
+
+#logo {
+    color: #fff;
+    font-weight: 100
+}
+
+/* Base */
+#imagem {
+    width: 100%;
+    height: auto;
+}
+
+.mockup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+.bloco2 {
+    padding-left: 3rem;
+    width: 40%;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+}
+@media (max-width: 800px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    #mockup {
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1fr, 1fr);
+        gap: 2rem;
+    }
+    .bloco2 {
+    width: 80%;
+    }
+}
+
+
+.button { 
+    
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: rgb(217, 0, 255);
+    background-color: #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    height: 48px; 
+}
+.button:hover {
+        transform: scale(1.04);
+        background-color: #ff52cb;
+}
+
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+
+}
+.form input, .form select {
+  font-family: "Poppins", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.senha {
+    display: flex;
+    width: 100%;
+}
+.olho {
+
+    width: 10px;
+    background:transparent;
+
+}
+.form input:focus .select {
+    background: hsl(300, 69%, 71%);
+    margin-bottom: 2px solid;
+}
+.form button {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+    background:hsl(257, 40%, 49%) url("./images/bg-desktop.svg");
+  
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+/* Modal */
+.modal-overlay {
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.hidden, .correto, .cpfvalido, .naoenvia {
+    display: none;
+    visibility: hidden;
+}
+.modal {
+   
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0.25rem;
+    
+}
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    
+}
+/* Table */
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 1em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
